@@ -6,8 +6,6 @@ Projeto de marketplace com integração de API pública desenvolvido para a entr
 
 # 🚀 Link do Projeto Online
 
-Adicione aqui o link da sua aplicação publicada:
-
 https://vinims22.github.io/bootcamp-entrega-intermediaria/
 
 ---
