@@ -221,12 +221,25 @@
             🔄 Nova Curiosidade
         </button>
 
+        <button onclick="salvarCuriosidade()">
+    ⭐ Salvar Curiosidade
+</button>
+        <button onclick="apagarCuriosidades()">
+    🗑️ Apagar Curiosidades Salvas
+</button>
+
+<h3 style="margin-top: 25px;">Curiosidades Salvas</h3>
+
+<div id="curiosidadesSalvas" style="margin-top: 15px; font-size: 14px; line-height: 22px;">
+    Carregando curiosidades salvas...
+</div>
+
         <div class="footer">
             Projeto desenvolvido para integração de API pública.
         </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 
 </body>
