@@ -103,5 +103,34 @@ async function listarCuriosidades() {
         .join("<br><br>");
 }
 
+async function apagarCuriosidades() {
+
+    const confirmar = confirm(
+        "Tem certeza que deseja apagar todas as curiosidades?"
+    );
+
+    if (!confirmar) {
+        return;
+    }
+
+    const { error } = await banco
+        .from("curiosidades")
+        .delete()
+        .neq("id", 0);
+
+    if (error) {
+
+        alert("Erro ao apagar curiosidades.");
+
+        console.error(error);
+
+        return;
+    }
+
+    alert("Curiosidades apagadas com sucesso!");
+
+    listarCuriosidades();
+}
+
 buscarCuriosidade();
 listarCuriosidades();
