@@ -1,39 +1,64 @@
-# 🐱 Cat Facts API Marketplace
+# 🐱 Cat Facts Cloud
 
-Projeto de marketplace com integração de API pública desenvolvido para a entrega intermediária do BootCamp.
+Sistema web desenvolvido para a Entrega Final do BootCamp, utilizando APIs públicas, banco de dados em nuvem e práticas colaborativas de desenvolvimento com GitHub.
 
 ---
 
-# 🚀 Link do Projeto Online
+# 🚀 Aplicação Online
 
 https://vinims22.github.io/bootcamp-entrega-intermediaria/
 
 ---
 
+# 💻 Repositório GitHub
+
+https://github.com/vinims22/bootcamp-entrega-intermediaria
+
+---
+
 # 📌 Sobre o Projeto
 
-Este projeto utiliza uma API pública para exibir curiosidades aleatórias sobre gatos em tempo real.
+O Cat Facts Cloud é uma aplicação web desenvolvida com HTML, CSS e JavaScript que consome uma API pública para exibir curiosidades sobre gatos em tempo real.
 
-Além disso, o sistema traduz automaticamente as curiosidades para português, deixando a experiência mais interativa e dinâmica.
+As curiosidades são traduzidas automaticamente para português e podem ser armazenadas em um banco de dados PostgreSQL hospedado na nuvem através do Supabase.
+
+O projeto foi evoluído durante as etapas do BootCamp, incorporando persistência de dados, controle de versão colaborativo e integração contínua.
+
+---
+
+# 🎯 Objetivo
+
+Demonstrar a aplicação prática dos conceitos de:
+
+* Consumo de APIs REST
+* Integração com banco de dados em nuvem
+* Controle de versão utilizando Git e GitHub
+* Desenvolvimento colaborativo com Branches e Pull Requests
+* Deploy contínuo
+* Testes automatizados
 
 ---
 
 # 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Jest
-- GitHub
-- Vercel
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
+* GitHub Pages
+* GitHub Actions
+* Jest
+* Supabase
+* PostgreSQL
 
 ---
 
-# 🌐 APIs Utilizadas
+# 🌐 APIs e Serviços Utilizados
 
-## Cat Facts API
+## Cat Fact API
 
-Responsável por fornecer curiosidades aleatórias sobre gatos.
+Fornece curiosidades aleatórias sobre gatos.
 
 https://catfact.ninja/fact
 
@@ -41,49 +66,105 @@ https://catfact.ninja/fact
 
 ## MyMemory Translation API
 
-Responsável por traduzir automaticamente as curiosidades para português.
+Responsável pela tradução automática das curiosidades para português.
 
 https://api.mymemory.translated.net/
 
 ---
 
-# ✅ Funcionalidades
+## Supabase
 
-- Exibição de curiosidades aleatórias
-- Tradução automática para português
-- Interface moderna e responsiva
-- Integração com API pública
-- Teste automatizado com Jest
-- Deploy online
+Serviço de banco de dados em nuvem utilizado para persistência das curiosidades salvas.
+
+https://supabase.com
 
 ---
 
-# 🧪 Teste de Integração
+# ✅ Funcionalidades Implementadas
 
-O projeto possui teste automatizado utilizando Jest para validar a comunicação com a API pública.
+* Exibição de curiosidades aleatórias sobre gatos
+* Tradução automática para português
+* Atualização dinâmica das curiosidades
+* Salvamento de curiosidades favoritas
+* Consulta das curiosidades armazenadas
+* Exclusão das curiosidades salvas
+* Persistência de dados em banco PostgreSQL
+* Interface moderna e responsiva
+* Deploy online
+* Controle de versão com GitHub
 
-Para executar os testes:
+---
 
+# 🗄️ Banco de Dados
+
+Plataforma utilizada:
+
+**Supabase (PostgreSQL)**
+
+Tabela utilizada:
+
+**curiosidades**
+
+Campos:
+
+| Campo       | Descrição               |
+| ----------- | ----------------------- |
+| id          | Identificador único     |
+| created_at  | Data e hora do registro |
+| curiosidade | Texto da curiosidade    |
+
+---
+
+# 🔀 Práticas de Desenvolvimento Utilizadas
+
+Durante o desenvolvimento da entrega final foram aplicadas práticas reais de desenvolvimento colaborativo:
+
+* Criação de Issues
+* Utilização de Branches
+* Implementação em branch específica
+* Abertura de Pull Request
+* Revisão e Merge das alterações
+* Controle de histórico através de commits
+
+---
+
+# 🧪 Testes
+
+O projeto possui testes automatizados utilizando Jest para validação da integração com APIs externas.
+
+Execução:
+
+```bash
 npm test
+```
 
 ---
 
-# ▶️ Como Executar o Projeto
+# ▶️ Execução Local
 
-1. Clone o repositório
+Clone o repositório:
 
-git clone LINK-DO-REPOSITORIO
+```bash
+git clone https://github.com/vinims22/bootcamp-entrega-intermediaria.git
+```
 
-2. Abra o projeto
+Execute:
 
-3. Execute localmente
-
+```bash
 python -m http.server 8000
+```
+
+Acesse:
+
+```text
+http://localhost:8000
+```
 
 ---
 
 # 📁 Estrutura do Projeto
 
+```text
 ├── index.html
 ├── script.js
 ├── package.json
@@ -91,9 +172,40 @@ python -m http.server 8000
 ├── tests
 │   └── api.test.js
 └── README.md
+```
+
+---
+
+# 📋 Requisitos da Entrega Final Atendidos
+
+✅ Consumo de API pública
+
+✅ Tradução automática de conteúdo
+
+✅ Banco de dados em nuvem
+
+✅ Persistência de dados
+
+✅ Operações de leitura e escrita no banco
+
+✅ Utilização de Issues
+
+✅ Utilização de Branches
+
+✅ Pull Request
+
+✅ Merge de alterações
+
+✅ Testes automatizados
+
+✅ GitHub Actions
+
+✅ Deploy online funcional
 
 ---
 
 # 👨‍💻 Autor
 
-Projeto desenvolvido por Vinicius Melonio para a entrega intermediária do BootCamp.
+**Vinicius Melonio**
+
+Projeto desenvolvido para a Entrega Final do BootCamp de Engenharia de Software.
